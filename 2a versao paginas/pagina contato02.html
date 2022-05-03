@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <title>CONTATO</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    #titulo{
+      margin-left: 4%;
+      font-family: sans-serif;
+      color: #0000FF
+    }
+    #subtitulo{
+      font-family: sans-serif;
+      color: #0000FF;
+      margin-left: 4%;
+      margin-bottom: 20px;
+    }
+    fieldset{
+      border:0;
+    }
+    body{
+      background-color: #87CEEB;
+      font-family: sans-serif;
+      font-size: 20;
+      color: #104E8B;
+      margin-left: 36%;
+      margin-top: 2%;
+      margin-bottom: 5%;
+      justify-content: center;
+      background-image: url(grid-light.jpg);
+      background-repeat: repeat;
+    }
+    input, textarea{
+      border-radius: 5px;
+    }
+    .campo{
+      margin-bottom: 20px;
+    }
+    .campo label{
+      margin-bottom: 2px;
+      display:block;
+    }
+    fieldset .grupo .campo{
+      float: left;
+      margin-right: 10px;
+    }
+    .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo textarea{
+      padding:10px;
+      border: 1px solid #27408B;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+    }
+    .campo input:focus, .campo textarea:focus{
+      background-color: #7AC5CD;
+    }
+    .botao{
+      font-size: 18;
+      background-color: #104E8B;
+      border: 0;
+      margin-bottom: 10px;
+      color:#FFFAFA;
+      padding: 2px 6px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      top: 90%;
+      left: 50%;
+      margin-left:10%;
+      padding: 10px;
+    }
+    .botao:hover{
+      background: #00CDCD;
+      box-shadow: rgba(0, 0, 0, 0.2);
+      text-shadow: none;
+    }
+    #check, #pergunta{
+      display: inline-block;
+      padding: 0px 0px 20px 0px;
+    }
+    #areadetexto{
+      width:370px;
+      height:150px;
+    }
+    #sobrenomes, #nomes, #emails, #telefones{
+      display: inline-block;
+    }
+    #rodape{
+      font-family: sans-serif;
+      font-size: 18;
+      text-indent: 30px;
+      margin: 50px 470px 0px 0px;
+      text-align: justify;
+      border-style: dashed;
+      border-color: blue;
+    }
+    #backpage{
+      margin-left: 500px;
+      border-style: 1px;
+      border-radius: 5px;
+      border-color: black;
+      background-color: gray;
+    }
+    @media screen and (max-width: 480px){
+      body{
+        margin: 0;
+      }
+      .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo textarea{
+        padding:10px;
+        border: 1px solid #27408B;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        display: block;
+        max-width: 100%;
+      }
+      #rodape{
+        margin: 0;
+        max-width: 100%;
+      }
+      #backpage{
+        display: block;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .botao{
+        margin-left: 20%;
+      }
+    }
+</style>
+<body>
+      <div>
+          <h1 id="titulo">Suporte para dúvidas</h1>
+          <h2 id="subtitulo">Preencha suas informações:</h2>
+          <a href="pagina 01.html" id="backpage">Retornar à página inicial</a>
+      </div>
+      <form>
+            <fieldset class="grupo">
+              <div class="campo" id="nomes">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" maxlength="30" placeholder="Seu nome" required>
+              </div>
+
+              <div class="campo" id="sobrenomes">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" maxlength="30" placeholder="Seu sobrenome" required>
+              </div>
+            </fieldset>
+
+            <div class="campo" id="emails">
+              <label for="email"><strong>E-mail:</strong></label>
+              <input type="email" name="email" id="email" maxlength="30" placeholder="seuemail@dominio.com" required>
+            </div>
+
+            <div class="campo" id="telefones">
+              <label for="telefone"><strong>Telefone/Celular:</strong></label>
+              <input type="tel" name="telefone" id="telefone"  maxlength="30" placeholder="(XX) X XXXX-XXXX">
+            </div>
+
+            <div class="campo">
+              <label><strong>Sexo</strong></label>
+              <input type="radio" name="sexo" id="masculino" checked>
+              <label for="masculino">Masculino</label>
+              <input type="radio" name="sexo" id="feminino">
+              <label for="feminino">Feminino</label>
+            </div>
+
+          <fieldset class="grupo">
+            <div id="check">
+              <label id="pergunta"><strong>Como quer receber nossa resposta?</strong></label>
+              <br>
+              <input type="checkbox" name="resp_email" id="resp_email">
+              <label for="resp_email">E-mail</label>
+              <input type="checkbox" name="resp_ligacao" id="resp_ligacao">
+              <label for="resp_ligacao">Ligação Telefônica</label>
+              <input type="checkbox" name="resp_mensagem" id="resp_mensagem">
+              <label for="resp_mensagem">Mensagem de Texto</label>
+            </div>
+          </fieldset>
+
+            <div class="campo">
+              <label for="areadetexto"><strong>Mensagem:</strong></label>
+              <br>
+              <textarea id="areadetexto" maxlength="300" placeholder="Digite sua dúvida aqui"></textarea>
+            </div>
+
+              <button type="submit" class="botao">Enviar</button>
+              <button type="reset" class="botao">Apagar</button>
+      </form>
+      <footer>
+        <p id="rodape">
+          Nós não vendemos o seu e-mail ou qualquer informação para terceiros.
+          Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para solicitar suporte e falar conosco em horário comercial de Segunda a Sextas das 09h00 às 18h00.
+          Lemos e respondemos todas as mensagens por ordem de chegada.
+        </p>
+        <script src="paginacontatoJS.js"></script>
+      </footer>
+</body>
+</html>
