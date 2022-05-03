@@ -1,0 +1,139 @@
+<DOCTYPE! html>
+<html>
+    <head>
+      <title>CONTATO</title>
+      <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+            #tabela{
+                  background-color: #436EEE	;
+            }
+            h1, h3{
+                  text-align: center;
+            }
+            p{
+              font-size: 20;
+							margin-left: 200px;
+							margin-right: 200px;
+							text-align: justify;
+							text-indent: 40px;
+							line-height: 1.5;
+              background-color: #7FFFD4;
+              border-width: 2px;
+    					border-color: #5F9EA0;
+    					border-style: solid;
+            }
+            #imagem, #formulario{
+              display: inline-block;
+              margin-left: 200px;
+							margin-right: 50px;
+            }
+            .container{
+              border-width: 2px;
+              border-style: solid;
+              border-color: blue;
+              margin-right: 1100px;
+              background-color: #7FFFD4;
+            }
+            h1{
+              background-color: #436EEE;
+            }
+            #nome, #email, #telefone, #mensagem{
+              background-color: #98F5FF;
+            }
+            #mensagem{
+              width: 400px;
+              height: 130px;
+
+            }
+    </style>
+    <body>
+    <h1>PÁGINA DE SUPORTE PARA DÚVIDAS</h1>
+    <nav>
+        <div class="container">
+        <a href="pagina 01.html">RETORNAR A PÁGINA INICIAL</a>
+        </div>
+    </nav>
+    <hr/>
+    <form method="get" action="#" id="formulario">
+            <table border="1" id="tabela">
+              <thead>
+                <tr>
+                  <th>CONTATO PARA DÚVIDAS</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <!--LINHA 1-->
+                    <tr>
+                      <td>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="Digite seu nome aqui" maxlength="80">
+                      </td>
+                    </tr>
+                    <!--LINHA 2-->
+                    <tr>
+                      <td>
+                        <label for="email">E-mail: </label>
+                        <input type="text" id="email" placeholder="seuemail@dominio.com" maxlength="50">
+                      </td>
+                    </tr>
+                    <!--LINHA 3-->
+                    <tr>
+                      <td>
+                        <label for="telefone">Telefone/Celular: </label>
+                        <input type="tel" id="telefone" placeholder="(XX) X XXXX-XXXX" maxlength="15">
+                      </td>
+                    </tr>
+                    <!--LINHA 4-->
+                    <tr>
+                      <td>
+                        <label>SEXO: </label>
+                        <input type="radio" id="masculino" name="sexo" checked>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="feminino" name="sexo">
+                        <label for="feminino">Feminino</label>
+                      </td>
+                    </tr>
+                    <!--LINHA 5-->
+                    <tr>
+                      <td rowspan="2">
+                          <h3>Como quer receber nossa resposta?</h3>
+                          <input type="checkbox" id="resposta_email">
+                          <label for="resposta_email">E-mail</label>
+                          <input type="checkbox" id="resposta_ligacao">
+                          <label for="resposta_ligacao">Ligação Telefônica</label>
+                          <input type="checkbox" id="resposta_sms">
+                          <label for="resposta_sms">Mensagem de Texto</label>
+                      </td>
+                    </tr>
+                    <tr>
+                  </tr>
+                  <!--LINHA 6-->
+                    <tr>
+                      <td>
+                        <label for="mansagem">Mensagem: </label><br>
+                        <textarea id="mensagem" placeholder="Digite sua dúvida aqui" maxlength="200"></textarea>
+                      </td>
+                    </tr>
+                  <!--LINHA 7-->
+                  <tr>
+                    <td>
+                      <input type="submit" value="Enviar">
+                      <input type="reset" value="Deletar">
+                    </td>
+                  </tr>
+
+                </tbody>
+            </table>
+    </form>
+    <img src="contato01.jpg" id="imagem">
+    <hr/>
+    <footer>
+        <p>
+         Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam.
+         Se você tiver alguma dúvida, sinta-se à vontade para solicitar suporte e falar conosco em horário comercial de Segunda a Sextas das 09h00 às 18h00.
+         Lemos e respondemos todas as mensagens por ordem de chegada.
+       </p>
+    </footer>
+  </body>
+</html>
